@@ -1,0 +1,23 @@
+{
+  "name": "clase-1-sesion-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emiliano-Rotta/Talento-digital-Modulo-6-clase-1-sesion-1-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emiliano-Rotta/Talento-digital-Modulo-6-clase-1-sesion-1-/issues"
+  },
+  "homepage": "https://github.com/Emiliano-Rotta/Talento-digital-Modulo-6-clase-1-sesion-1-#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

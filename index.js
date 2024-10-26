@@ -64,15 +64,57 @@
 // Ejercicio 1: Control de ejecución con setTimeout
 // Consigna: Crear un programa que imprima "Inicio", espere 3 segundos y luego imprima "Fin".
 
+// console.log("inicio");
+// setTimeout(()=>{
+//     console.log("fin")
+// }, 3000)
+
+
+
 // Ejercicio 2: Llamada a API
 // Consigna: Crear una función que obtenga los datos del personaje(status) con ID 3 en la API de Rick and Morty usando fetch y .then.
 
+// fetch("https://rickandmortyapi.com/api/character/3")
+// .then(response => response.json())
+// .then(data => console.log("El estado es: ", data.status))
+// .catch(error => console.log(error))
+
+
 // Ejercicio 3: Llamadas encadenadas con fetch
 // Consigna: Realizar dos llamadas seguidas a la API, primero para el personaje con ID 4 y luego para el personaje con ID 5.
+// fetch("https://rickandmortyapi.com/api/character/4")
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log("Personaje 4:", data.name);
+//     return fetch("https://rickandmortyapi.com/api/character/5");
+//   })
+//   .then(response => response.json())
+//   .then(data => console.log("Personaje 5:", data.name))
+//   .catch(error => console.error("Error:", error));
+// ;
 
 // Ejercicio 4: Función con async y await
 // Consigna: Crear una función asincrónica obtenerPersonajes que obtenga los personajes con ID 6 y 7.
 
+// async function obtenerPersonaje() {
+//    const personajes = [6, 7]
+//    for (const id of personajes) {
+//     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`) 
+//     const data = await response.json();
+//     console.log(`El nombre del personaje con el id ${id} es: `, data.name)
+//    }
+// }
+
+// obtenerPersonaje()
 
 // Ejercicio 5: Uso de setTimeout y múltiples mensajes
 // Consigna: Crea un programa que imprima "Inicio del programa", luego espere 1 segundo e imprima "Cargando datos...", y después de otros 2 segundos imprima "Datos cargados correctamente".
+
+// console.log("Inicio del programa");
+
+// setTimeout(()=>{
+//     console.log("Cargando datos...")
+//     setTimeout(()=>{
+//         console.log("Datos cargados correctamente...")
+//     }, 2000)
+// }, 1000)

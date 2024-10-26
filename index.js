@@ -124,14 +124,26 @@
 
 
 // ---------------------------------------------------------------------
+//este ejercicio es avanzado, pero está en los ejemplos de la sesion 1
 
+//instalo express y lo traigo
 const express = require('express')
+// declaro una variable para usar express
 const app = express()
-
+//ruta get que arroja status 200 de mensaje
 app.get('/', function (req, res) {
     res.send('Status Code 200');
 });
+
 function respuesta(req, res) {
-    res.send('Status Code 200');
+    res.send('otra respuesta');
 }
-app.get('/', respuesta);
+//ruta get que ejecuta la funcion respuesta
+app.get('/otra-respuesta', respuesta);
+
+
+//me pemite verlo en el http://localhost:3000
+app.listen(3000,()=>{
+    console.log("Servidor escuchando en el puerto 3000")
+})
+// aqui se levanta el servidor, hasta que le digo ctrol C
